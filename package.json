@@ -2,15 +2,20 @@
   "name": "cyber-generator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jakubkicek.gtihub.io/cyberPunkers/",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "reactstrap": "^6.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }

@@ -1,28 +1,117 @@
-.App {
-  text-align: center;
+.initial-form{
+    text-align: center;
+    margin: 5vh 0 10vh 0;
+}
+h3{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-size: 3em;
+    padding: 2.5vh 0;
+    position: relative;
+}
+.basic-info-table{
+    height: 10vh;
+    box-sizing: border-box;
+    margin-bottom: 50vh;
+}
+.basic-info {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.basic-info div span {
+    color: darkslategray;
+    font-weight: 700;
+}
+.basic-info div{
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.7);
+    color: black;
+    padding: 2%;
+}
+.basic-desc div{
+    font-size: 1em;
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(245, 245, 245, 0.7);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2.7%;
+}
+input{
+    color: black;
+    border: 2px solid rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    text-align: right;
+    font-size: 0.9em;
+    outline: none;
+    margin: 1vh 1%;
+    padding: 1vh 5vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+input[type="reset"]{
+    padding: 0.5em;
+    transition-duration: 0.5s;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #404040;
+}
+.secondary-info-table {
+    padding: 5%;
+    margin-bottom: 1vh;
+    padding-bottom: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.secondary-info {
+    background-color: rgba(245, 245, 245, 0.7);
+    color: black;
+    padding: 5%;
+    margin-top: 1vh;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+.secondary-info.implants{
+    margin-bottom: 20vh;
 }
 
-.App-title {
-  font-size: 1.5em;
+.secondary-info p {
+    text-align: center;
+    font-size: 130%;
 }
 
-.App-intro {
-  font-size: large;
-}
+/*            RWD             */
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+@media (min-width: 992px){
+    h3{
+        text-align: left;
+        font-size: 1.9em;
+    }
+    .basic-info div{
+        padding: 4.5%;
+    }
+    .basic-info-table {
+        margin-bottom: 2vh;
+    }
+    input{
+        margin: 0;
+        padding: 0.5em 0;
+        width: 10vw;
+    }
+    .initial-form{
+        text-align: right;
+    }
+    input[type="reset"]{
+        color: black;
+        background-color: rgba(245,245,245,0.7);
+        width: 5vw;
+        margin-left: 3vw;
+    }
+    input[type="reset"]:hover{
+        color: whitesmoke;
+        background-color: #404040;
+    }
 }
