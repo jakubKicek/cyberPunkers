@@ -450,18 +450,22 @@ function CharAttr({
                         <Container fluid={true}>
                             <Row>
                                 <Col sm="12" lg="5">
-                                    <Col className="basic-info" sm="6">
-                                       <div>Imię: <span>{name}</span></div>
-                                    </Col>
-                                    <Col className="basic-info" sm="6">
-                                        <div>Klasa: <span>{characterClass}</span></div>
-                                    </Col>
-                                    <Col className="basic-info" sm="6">
-                                        <div>Płeć: <span>{characterGender}</span></div>
-                                    </Col>
-                                    <Col className="basic-info" sm="6">
-                                        <div>Poziom: <span>{characterLevel}</span></div>
-                                    </Col>
+                                    <Container fluid={true}>
+                                        <Row>
+                                            <Col className="basic-info" sm="6">
+                                               <div>Imię: <span>{name}</span></div>
+                                            </Col>
+                                            <Col className="basic-info" sm="6">
+                                                <div>Klasa: <span>{characterClass}</span></div>
+                                            </Col>
+                                            <Col className="basic-info" sm="6">
+                                                <div>Płeć: <span>{characterGender}</span></div>
+                                            </Col>
+                                            <Col className="basic-info" sm="6">
+                                                <div>Poziom: <span>{characterLevel}</span></div>
+                                            </Col>
+                                        </Row>
+                                    </Container>
                                 </Col>
                                 <Col className="basic-desc" sm="12" lg="7">
                                     <div>
@@ -482,10 +486,10 @@ function CharAttr({
                                         <Container fluid={true}>
                                             <Row>
                                                 <Col sm="8">
-                                                    <div>{key} </div>
+                                                    {key}
                                                 </Col>
                                                 <Col sm="4">
-                                                    <div>{value}</div>
+                                                    {value}
                                                 </Col>
                                             </Row>
                                         </Container>
@@ -502,10 +506,10 @@ function CharAttr({
                                     return(
                                         <Container fluid={true}>
                                             <Row>
-                                                <Col sm="9">
+                                                <Col sm="8">
                                                     <div>{key} </div>
                                                 </Col>
-                                                <Col sm="3">
+                                                <Col sm="4">
                                                     <div>{value}</div>
                                                 </Col>
                                             </Row>
