@@ -3,6 +3,45 @@ body{
     box-sizing: border-box;
     font-size: 2vw;
     color: whitesmoke;
+    padding-bottom: 10vh;
+}
+#demo-header{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: 1px solid black;
+    color: whitesmoke;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    padding-top: 0.7em;
+}
+#demo-header a{
+    color: whitesmoke;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+#demo-header a:nth-of-type(even):hover{
+    color: deeppink;
+}
+#demo-header a:nth-of-type(odd):hover{
+    color: chartreuse;
+}
+#feedback-window{
+    width: 50vw;
+    height: 50vw;
+    border: 2px solid whitesmoke;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    right: 0;
+}
+#feedback-window.now-you-see-me{
+    display: inline-block;
 }
 #actual-app{
     position: relative;
@@ -51,6 +90,7 @@ footer span{
 }
 not-really-an-app{
     position: static;
+    padding:  -bottom: 10vh;
 }
 /*            RWD                */
 @media (min-width: 992px){
